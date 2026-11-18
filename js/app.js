@@ -96,8 +96,15 @@
       } catch (x) { err.textContent = x.message; btn.disabled = false; return; }
       btn.disabled = false;
     }
-    Session.save({ type: "email", email });
-    toast("Signed in");
+    $("#emailSentTo").textContent = email;
+    $("#emailForm").hidden = true;
+    $("#emailSent").hidden = false;
+  });
+
+  $("#emailRetry").addEventListener("click", () => {
+    $("#emailSent").hidden = true;
+    $("#emailForm").hidden = false;
+    $("#email").focus();
   });
 
   /* ---------- Boot ---------- */

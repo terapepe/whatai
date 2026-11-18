@@ -200,3 +200,8 @@ details p { color: var(--mute); margin: 8px 0 0; }
   .ca-copy span { display: none; }
   .nav > a:not(.icon-link):not(.pill) { padding: 8px; }
 }
+.sent { text-align: center; padding: 18px 16px; border-radius: 12px; background: rgba(37, 211, 102, .1); border: 1px solid rgba(37, 211, 102, .3); }
+.sent svg { color: var(--brand); margin: 0 auto 6px; display: block; }
+.sent p { margin: 6px 0 10px; color: var(--mute); font-size: 14px; }
+.sent p span { color: var(--ink); font-weight: 600; word-break: break-all; }
+.linkish { border: 0; background: none; color: var(--brand-d); font: 600 13px Inter; cursor: pointer; text-decoration: underline; }
